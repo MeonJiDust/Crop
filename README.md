@@ -10,7 +10,7 @@
 
 # 📝 Features
 
-<img src="[/assets/90547127/457bcb41-634e-43d5-ac62-1fd29a61a68b]"  width="260" height="600">
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/34edf743-efc7-41f7-88d8-459b84ebfb63"  width="260" height="400">
 
 
 # ⭐️ 주요 코드 리뷰
