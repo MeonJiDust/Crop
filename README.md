@@ -8,9 +8,24 @@
 
 사용자(판매자)는 농산물 그 날 농산물의 시세를 확인하고 바로 어플에 판매 글을 등록할 수 있으며, 또 다른 사용자(구매자)는 마트 등에 납품할 때 생기는 수수료가 붙지 않은 농산물을 구입할 수 있습니다.
 
-# 📝 Features
+# 📝 주요 Activity
 
-<img src="https://github.com/MeonJiDust/Crop/assets/90547127/34edf743-efc7-41f7-88d8-459b84ebfb63"  width="260" height="400">
+▸ 회원가입 Activity
+
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/34edf743-efc7-41f7-88d8-459b84ebfb63"  width="200" height="400">
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/2f6bba42-f84d-41ba-a6ab-992d9fd20053"  width="200" height="400">
+
+▸ 작물선택 Activity, 판매작물 list Activity ( 작물선택 Activity에서 선택한 작물에 따라, 판매작물list Activity의 상단 멘트가 바뀜 )
+
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/2ce53865-6aa0-4d2e-a5c8-14b93941da8e"  width="200" height="400">
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/3cd654e7-1e86-45a7-a409-76c0bd806ccd"  width="200" height="400">
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/4cd43139-04a1-4a94-a471-f72bf15159d2"  width="200" height="400">
+
+▸ 작물등록 Activity
+
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/e02dab80-7d6c-49f0-aea7-e9aaee5ce1a5"  width="200" height="400">
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/e00e5270-4949-48d3-8013-3fab8e54538a"  width="200" height="400">
+<img src="https://github.com/MeonJiDust/Crop/assets/90547127/85f62e3a-a4cd-42ce-8bd1-75b0862fb6c6"  width="200" height="400">
 
 
 # ⭐️ 주요 코드 리뷰
