@@ -8,6 +8,11 @@
 
 사용자(판매자)는 농산물 그 날 농산물의 시세를 확인하고 바로 어플에 판매 글을 등록할 수 있으며, 또 다른 사용자(구매자)는 마트 등에 납품할 때 생기는 수수료가 붙지 않은 농산물을 구입할 수 있습니다.
 
+# 📝 Features
+
+<img src="[https://github.com/MeonJiDust/Crop/assets/90547127/ab886124-2257-4e49-a3d0-d34d39367d2c]"  width="360" height="800">
+
+
 # ⭐️ 주요 코드 리뷰
 
 ▸ 작물 등록 화면에서 '작물선택'버튼을 누르면 작물을 선택할 수 있는 다이얼로그가 띄워지게 되고 작물을 선택하면, **해당 작물에 대한 현재 시세를 볼 수 있는** 기능
@@ -63,10 +68,6 @@ public void onCheckedChanged(RadioGroup radioGroup, int i) {
         }
 }
 ```
-
-# 📝 Features
-
-![image](https://github.com/MeonJiDust/Crop/assets/90547127/ab886124-2257-4e49-a3d0-d34d39367d2c)
 
 # 🤔 배운점
 
