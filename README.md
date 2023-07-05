@@ -10,4 +10,16 @@
 
 # ⭐️ Key Function
 
+▸ 작물 등록 화면에서 '작물선택'버튼을 누르면 작물을 선택할 수 있는 다이얼로그가 띄워지게 되고 작물을 선택하면, **해당 작물에 대한 현재 시세를 볼 수 있는** 기능
+```
+builder = new AlertDialog.Builder(EnrollVegetActivity.this);
+        builder.setTitle("작물을 선택하세요");
+        builder.setItems(crops, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                btn_select_food_crops.setText(crops[i]);
+                crops_view.setText(quote[i] + "   ");
+            }
+        });
+```
 
