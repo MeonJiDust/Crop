@@ -32,17 +32,46 @@ builder = new AlertDialog.Builder(EnrollVegetActivity.this);
 ```
 //이전 Activity에서 2번째 작물 선택
 imageView2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View veiw){
-                Intent intent = new Intent(VegetSelectActivity.this, CropListActivity.class);
+        @Override
+        public void onClick(View veiw){
+        Intent intent = new Intent(VegetSelectActivity.this, CropListActivity.class);
                 intent.putExtra("tag", 1);
                 sharedPreferences = getSharedPreferences("test", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putInt("tag", 1);
                 editor.commit();
                 startActivity(intent);
-            }
-        });
+        }
+});
 ```
 
-▸
+▸ 회원가입 Activity에서, 판매자는 자신이 농부임을 증명하는 서류를 제출할 수 있는 파일 선택 버튼이 필요하지만, 구매자는 해당 버튼이 필요없다.
+
+따라서 판매자와 구매자를 선택할 수 있는 라디오버튼에서 해당 버튼을 보일지 말지를 결정할 수 있도록 작성하였다.
+
+```
+public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+        if (i == R.id.seller){
+                user_type[0] = "판매자";
+                file_name.setVisibility(View.VISIBLE);
+                select_file.setVisibility(View.VISIBLE);
+        }else if(i == R.id.buyer){
+                user_type[0] = "구매자";
+                file_name.setVisibility(View.INVISIBLE);
+                select_file.setVisibility(View.INVISIBLE);
+        }
+}
+```
+
+# 📝 Features
+
+![image](https://github.com/MeonJiDust/Crop/assets/90547127/ab886124-2257-4e49-a3d0-d34d39367d2c)
+
+# 🤔 배운점
+
+▸ 안드로이드 스튜디오의 라이브러리 중에 SharedPreferences라는 라이브러리를 새로 알게 되었고, 이후 프로젝트 진행 중에도 이번 같은 상황( DB를 쓰기엔 너무 작은 데이터를 저장해야할 때 )이 생기면 SharedPreferences를 사용하고 있다.
+
+▸ 키보드 밖의 화면을 터치하면 키보드가 내려가는 것과 같은 사용자가 느낄 수 있는 자잘한 오류들의 존재를 알게 되었다.
+
+
