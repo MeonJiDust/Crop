@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "855387401768",
+    "firebase_url": "https://appcontest-7581e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "appcontest-7581e",
+    "storage_bucket": "appcontest-7581e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855387401768:android:d775b1e3ec4314500d8f1d",
+        "android_client_info": {
+          "package_name": "com.example.appcontest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855387401768-k8b9q437phccql8lrto5h5aqgp0fiqni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq2f5IQ7EGmBQyxAItwBuDEiEzquigYag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855387401768-k8b9q437phccql8lrto5h5aqgp0fiqni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

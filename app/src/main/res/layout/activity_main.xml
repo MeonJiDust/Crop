@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_background2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="324dp"
+        android:layout_height="171dp"
+        android:background="@drawable/app_name"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"/>
+
+    <TextView
+        android:layout_width="313dp"
+        android:layout_height="92dp"
+        android:text="농식품 시세 확인과 구매를 한번에!"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:id="@+id/simpletext"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

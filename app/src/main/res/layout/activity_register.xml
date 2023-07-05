@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_background"
+    tools:context=".RegisterActivity"
+    android:id="@+id/registerActivity">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="260dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/register_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:background="#cdd139"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/register_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RadioButton
+            android:id="@+id/seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="판매자"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/buyer"
+            android:layout_marginTop="50dp"/>
+        <RadioButton
+            android:id="@+id/buyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="구매자"
+            android:checked="true"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/seller"
+            android:layout_marginTop="50dp"/>
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:hint="사용자 이름"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:hint="휴대폰 번호"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:hint="이메일(아이디)"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/etPhoneNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/etPW"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:hint="비밀번호"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/etCheckPW"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:hint="비밀번호 확인"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/etPW"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/select_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="파일선택"
+        android:textColor="#3C3B3F"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/etCheckPW"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/file_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:visibility="invisible"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/etCheckPW"
+        app:layout_constraintLeft_toRightOf="@id/select_file"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"/>
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="가입"
+        android:backgroundTint="#cdd139"
+        app:layout_constraintTop_toBottomOf="@id/etCheckPW"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="70dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_background"
+    tools:context=".VegetSelectActivity">
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:background="@android:color/transparent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="324dp"
+        android:layout_height="171dp"
+        android:background="@drawable/app_name"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="원하시는 작물을 선택해주세요"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/ricetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="410dp"
+        android:text="식량작물"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="94dp"
+        android:text="채소류"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="610dp"
+        android:text="특용작물"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="94dp"
+        android:text="과일류"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_rice"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/rice"
+        app:civ_border_color="#000000"
+        app:civ_border_overlay="true"
+        app:civ_border_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/circle_vegetable"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_vegetable"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/vegetable"
+        app:civ_border_color="#000000"
+        app:civ_border_overlay="true"
+        app:civ_border_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/circle_rice"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_charmggae"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="480dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/charmggae"
+        app:civ_border_color="#000000"
+        app:civ_border_overlay="true"
+        app:civ_border_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/circle_fruit"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_fruit"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="480dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/fruit"
+        app:civ_border_color="#000000"
+        app:civ_border_overlay="true"
+        app:civ_border_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/circle_charmggae"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

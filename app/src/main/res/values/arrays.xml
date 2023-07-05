@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_name">작물 선택</string>
+    <string-array name="food_crops">
+        <item>쌀</item>
+        <item>찹쌀</item>
+        <item>콩</item>
+        <item>녹두</item>
+        <item>팥</item>
+        <item>고구마</item>
+        <item>감자</item>
+    </string-array>
+
+    <string-array name="food_crops_quote">
+        <item>53,193원</item>
+        <item>3,634원</item>
+        <item>5,316원</item>
+        <item>10,875원</item>
+        <item>7,074원</item>
+        <item>4,557원</item>
+        <item>417원</item>
+    </string-array>
+
+    <string-array name="vegetables">
+        <item>배추</item>
+        <item>양배추</item>
+        <item>시금치</item>
+        <item>상추</item>
+        <item>오이</item>
+        <item>수박</item>
+        <item>호박</item>
+    </string-array>
+
+    <string-array name="vegetables_quote">
+        <item>53,193원</item>
+        <item>3,634원</item>
+        <item>5,316원</item>
+        <item>10,875원</item>
+        <item>7,074원</item>
+        <item>4,557원</item>
+        <item>417원</item>
+    </string-array>
+
+    <string-array name="special_crops">
+        <item>참깨</item>
+        <item>들깨</item>
+        <item>땅콩</item>
+        <item>느타리버섯</item>
+        <item>팽이버섯</item>
+        <item>새송이버섯</item>
+    </string-array>
+
+    <string-array name="special_crops_quote">
+        <item>53,193원</item>
+        <item>3,634원</item>
+        <item>5,316원</item>
+        <item>10,875원</item>
+        <item>7,074원</item>
+        <item>4,557원</item>
+        <item>417원</item>
+    </string-array>
+
+    <string-array name="fruits">
+        <item>사과</item>
+        <item>배</item>
+        <item>포도</item>
+        <item>감귤</item>
+        <item>단감</item>
+        <item>바나나</item>
+        <item>참다래</item>
+        <item>파인애플</item>
+        <item>오렌지</item>
+        <item>레몬</item>
+        <item>망고</item>
+    </string-array>
+
+    <string-array name="fruits_quote">
+        <item>53,193원</item>
+        <item>3,634원</item>
+        <item>5,316원</item>
+        <item>10,875원</item>
+        <item>7,074원</item>
+        <item>4,557원</item>
+        <item>417원</item>
+    </string-array>
+</resources>
